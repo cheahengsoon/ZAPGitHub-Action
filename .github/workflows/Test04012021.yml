@@ -10,5 +10,5 @@ jobs:
         uses: zaproxy/action-api-scan@v0.1.0
         with:
          
-          target: 'https://zapsample.demo.community.intersystems.com/crudall/_spec'
+          target: 'https://quorse.com/'
 
