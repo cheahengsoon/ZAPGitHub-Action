@@ -10,4 +10,4 @@ jobs:
         uses: zaproxy/action-api-scan@v0.1.0
         with:
           format: openapi
-          target: 'https://*.grammarly.com'
+          target: 'https://grammarly.ai'
