@@ -1,12 +1,14 @@
-- name: Test04012021
+name: owasp-zap-api-scan
 on: push
 
 jobs:
   zap_scan:
+    name: Scan REST APIs
     runs-on: ubuntu-latest
-    name: Scan ZAP website
     steps:
-      - name: ZAP Scan
-        uses: zaproxy/action-full-scan@v0.1.0
+      - name: ZAP Scan for crudall API
+        uses: zaproxy/action-api-scan@v0.1.0
         with:
-          target: 'https://www.zaproxy.org/'
+         
+          target: 'https://zapsample.demo.community.intersystems.com/crudall/_spec'
+
